@@ -1,7 +1,7 @@
 export function useAgregarAlumno() {
     const agregarAlumno = async (nuevoAlumno) => {
       try {
-        const response = await fetch('https://localhost:7008/Colegio/api/Alumnos/AgregarAlumnos', {
+        const response = await fetch('https://backtareadiego.azurewebsites.net/Colegio/api/Alumnos/ObtenerTodosAlumnos', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
