@@ -8,7 +8,7 @@ export function useFetchAlumnos() {
   useEffect(() => {
     const fetchAlumnos = async () => {
       try {
-        const response = await fetch('https://localhost:7008/Colegio/api/Alumnos/ObtenerTodosAlumnos');
+        const response = await fetch('https://backtareadiego.azurewebsites.net/Colegio/api/Alumnos/ObtenerTodosAlumnos');
         if (!response.ok) {
           throw new Error('Error al obtener los alumnos');
         }
